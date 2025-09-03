@@ -10,7 +10,10 @@ const userRoutes = require('./routes/users')
 const app = express()
 
 app.use(cors({ 
-    origin: 'http://localhost:5173', 
+    origin: [
+        'http://localhost:5173', 
+        'https://user-management-system-amber-five.vercel.app/login'
+    ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }));
