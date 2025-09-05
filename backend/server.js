@@ -12,7 +12,7 @@ const app = express()
 app.use(cors({ 
     origin: [
         'http://localhost:5173', 
-        'https://user-management-system-amber-five.vercel.app/login'
+        'https://user-management-system-amber-five.vercel.app'
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
